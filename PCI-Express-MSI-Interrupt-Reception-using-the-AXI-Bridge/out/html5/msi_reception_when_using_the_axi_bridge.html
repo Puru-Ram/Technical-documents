@@ -1,0 +1,35 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2024"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="task"><meta name="description" content="The MSI are memory write (MWr) TLPs. The core automatically builds the MSI packet whenever requested by your application logic and a simple handshake is all that is required. The AXI bridge receives MSI requests in the same manner as a MWr. The termination of an MSI request must be done by your application or by using the optional MSI controller."><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="msi_reception_when_using_the_axi_bridge"><title>MSI Reception when using the AXI Bridge</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="msi_reception_when_using_the_axi_bridge"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">MSI Reception when using the AXI Bridge</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">The MSI are memory write (MWr) TLPs. The core automatically builds the MSI packet
+        whenever requested by your application logic and a simple handshake is all that is required.
+        The AXI bridge receives MSI requests in the same manner as a MWr. The termination of an MSI
+        request must be done by your application or by using the optional MSI
+        controller.</p>
+        <section class="section context">
+            <p class="p"><strong class="ph b">AXI MSI Controller (RC Mode):</strong></p>
+        </section>
+        <section><ol class="ol steps"><li class="li step">
+                <span class="ph cmd">The bridge provides an optional MSI controller to detect and terminate incoming
+                    MSI requests by enabling the <code class="ph codeph">CX_MSI_CTRL_ENABLE =1</code></span>
+            </li><li class="li step">
+                <span class="ph cmd">The MSI packets are captured and terminated in the AXI bridge, and an interrupt
+                    is signaled locally.</span>
+            </li><li class="li step">
+                <span class="ph cmd">The MSI Controller is programmed with the similar system MSI address.</span>
+            </li><li class="li step">
+                <span class="ph cmd">The MSI interrupt is detected when the received MWr request matches specified
+                    MSI address, along with the MSI memory write request conditions.</span>
+            </li><li class="li step">
+                <span class="ph cmd">The MSI Controller that decodes the MSI MWr data payload that determines the
+                    Endpoint device (EP) and the interrupt vector corresponding to the MSI. </span>
+            </li><li class="li step">
+                <span class="ph cmd"><code class="ph codeph">msi_ctrl_int output</code>is asserted when as valid interrupt is
+                    decoded.</span>
+            </li><li class="li step">
+                <span class="ph cmd">De-assertion takes place when there is no MSI interrupt pending. </span>
+            </li></ol></section>
+    </div>
+</article></main></body></html>
