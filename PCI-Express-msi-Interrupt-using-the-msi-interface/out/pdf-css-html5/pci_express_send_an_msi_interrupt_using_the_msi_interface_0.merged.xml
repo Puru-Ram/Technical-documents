@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program%20Files/Oxygen%20XML%20Editor%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program%20Files/Oxygen%20XML%20Editor%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.pdf.css/css/print/p-dita.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program%20Files/Oxygen%20XML%20Editor%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.editlink/pdf-css.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program%20Files/Oxygen%20XML%20Editor%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/oxygen-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Program%20Files/Oxygen%20XML%20Editor%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/notes.css'?>
+<map xmlns:css2fo="http://www.oxygenxml.com/css2fo" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:nd="http://www.oxygenxml.com/css2fo/named-destinations" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:opentopic-index="http://www.idiominc.com/opentopic/index" xmlns:oxy="http://www.oxygenxml.com/extensions/author" xmlns:xs="http://www.w3.org/2001/XMLSchema" cascade="merge" class="- map/map " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (map glossref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" specializations="@props/deliveryTarget" xtrc="map:1;3:6" xtrf="file:/C:/Users/ltpur/Desktop/BABA/pci/pci_express_send_an_msi_interrupt_using_the_msi_interface_0.ditamap" xml:lang="en"><oxy:front-page class="- front-page/front-page "><oxy:front-page-title class="- front-page/front-page-title "><title xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder" class="- topic/title ">PCI Express - Send an MSI Interrupt using the MSI Interface</title></oxy:front-page-title></oxy:front-page><opentopic:map xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder" class="- toc/toc "><oxy:toc-title class="- toc/title " empty="true"/>
+    <title class="- topic/title ">PCI Express - Send an MSI Interrupt using the MSI Interface</title>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_1" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="pci_express_overview"><resourceid appid="pci_express_overview" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_1" class="- topic/navtitle ">PCI Express Overview </navtitle><?ditaot gentext?></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_2" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="interrupts_overview"><resourceid appid="interrupts_overview" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_2" class="- topic/navtitle ">Interrupts Overview</navtitle><?ditaot gentext?></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_3" type="task"><topicmeta class="- map/topicmeta " data-topic-id="msi_interface_protocol"><resourceid appid="msi_interface_protocol" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_3" class="- topic/navtitle ">MSI Interface Protocol</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The MSI interface protocol is a simple synchronous request/acknowledge handshake.         This interface enables the application to request the core to send an MSI         interrupt.</shortdesc></topicmeta></topicref>
+    <topicref is-chapter="true" class="- map/topicref " href="#unique_4" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="example_of_msi_message_interface_request"><resourceid appid="example_of_msi_message_interface_request" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_4" class="- topic/navtitle ">Example of MSI Message Interface Request</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The MSI interrupt initiated from the core by the interface.</shortdesc></topicmeta></topicref>
+</opentopic:map><topic break-before="true" is-chapter="true" class="- topic/topic " id="unique_1" topicrefclass="- map/topicref " nd:nd-id="pci_express_overview" oid="pci_express_overview" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">PCI Express Overview </ph></title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">
+            <ul class="- topic/ul " id="unique_1_Connect_42_ul_jlr_vgn_s1c" nd:nd-id="ul_jlr_vgn_s1c">
+                <li class="- topic/li ">Peripheral Component Interconnect (PCI) is a connection interface standard.</li>
+                <li class="- topic/li ">The PCI Express is an upgrade over the previous PCI, where it offers more
+                    bandwidth and is compatible with existing operating systems. </li>
+                <li class="- topic/li ">Unlike the PCI’s parallel connection, the PCI handles several point-to-point
+                    serial connections with a switch (like a network).</li>
+            </ul>
+        </p>
+    </body>
+</topic><topic break-before="true" is-chapter="true" class="- topic/topic " id="unique_2" topicrefclass="- map/topicref " nd:nd-id="interrupts_overview" oid="interrupts_overview" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">Interrupts Overview</ph></title>
+    <body class="- topic/body ">
+        <ul class="- topic/ul " id="unique_2_Connect_42_ul_zqm_13n_s1c" nd:nd-id="ul_zqm_13n_s1c">
+            <li class="- topic/li ">Interrupts are a method of creating a break in the flow of function.</li>
+            <li class="- topic/li ">The PCI Express feature three main methods of interrupt handling: Legacy Interrupt,
+                Message Signaled Interrupts (MSI), and MSI-X.</li>
+        </ul>
+    </body>
+</topic><task break-before="true" is-chapter="true" class="- topic/topic task/task " id="unique_3" topicrefclass="- map/topicref " nd:nd-id="msi_interface_protocol" oid="msi_interface_protocol" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">MSI Interface Protocol</ph></title>
+    <shortdesc class="- topic/shortdesc ">The MSI interface protocol is a simple synchronous request/acknowledge handshake.
+        This interface enables the application to request the core to send an MSI
+        interrupt.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "> Find below the procedure of sending the MSI interrupt using the MSI interface: </p>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">The MSI interface is only used for upstream ports. </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">ven_msi_req stays asserted until the core asserts ven_msi_grant</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">The MSI is requested by the application logic through the MSI interface. </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">The memory write is then generated by the core.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">ven_msi_grant is one-cycle pulse acknowledging ven_msi_req </cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">ven_msi_req is not required to be de-asserted before reasserting again.</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">When ven_msi_req remains asserted, the core generates another MSI.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><reference break-before="true" is-chapter="true" class="- topic/topic       reference/reference " id="unique_4" topicrefclass="- map/topicref " nd:nd-id="example_of_msi_message_interface_request" oid="example_of_msi_message_interface_request" specializations="@props/deliveryTarget">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">Example of MSI Message Interface Request</ph></title>
+    <shortdesc class="- topic/shortdesc ">The MSI interrupt initiated from the core by the interface.</shortdesc>
+    <refbody class="- topic/body        reference/refbody ">
+        <example class="- topic/example ">
+            <fig class="- topic/fig " id="unique_4_Connect_42_fig_v1t_wmn_s1c" nd:nd-id="fig_v1t_wmn_s1c"><title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">MSI interface request</ph></title><image class="- topic/image " dita-ot:image-width="617" dita-ot:image-height="359" href="file:/C:/Users/ltpur/Desktop/BABA/pci/msi-message-interface-request.png" id="unique_4_Connect_42_image_w1t_wmn_s1c" nd:nd-id="image_w1t_wmn_s1c" placement="inline">
+                    <alt class="- topic/alt ">example of msi message interface request</alt>
+                </image></fig>
+        </example>
+    </refbody>
+</reference></map>

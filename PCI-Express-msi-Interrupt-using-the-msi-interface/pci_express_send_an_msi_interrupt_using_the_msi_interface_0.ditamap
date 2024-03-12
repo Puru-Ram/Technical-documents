@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>PCI Express - Send an MSI Interrupt using the MSI Interface</title>
+    <topicref href="pci_express_overview.dita"/>
+    <topicref href="interrupts_overview.dita"/>
+    <topicref href="msi_interface_protocol.dita"/>
+    <topicref href="example_of_msi_message_interface_request.dita"/>
+</map>

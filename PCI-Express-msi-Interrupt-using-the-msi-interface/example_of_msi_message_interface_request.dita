@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="example_of_msi_message_interface_request">
+    <title>Example of MSI Message Interface Request</title>
+    <shortdesc>The MSI interrupt initiated from the core by the interface.</shortdesc>
+    <refbody>
+        <example>
+            <fig id="fig_v1t_wmn_s1c">
+                <title>MSI interface request</title>
+                <image href="msi-message-interface-request.png" id="image_w1t_wmn_s1c">
+                    <alt>example of msi message interface request</alt>
+                </image>
+            </fig>
+        </example>
+    </refbody>
+</reference>
