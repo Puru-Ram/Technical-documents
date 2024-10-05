@@ -1,0 +1,37 @@
+URL
+
+GET https://api.sounddate.com/user/userid/profile/sound
+
+Header:
+
+| element | description | optional | comment |
+| --- | --- | --- | --- |
+| Bearer | Access code | required |  |
+| Accept type | Application/xml or application/json | required | default is json |
+|  |  |  |  |
+
+Query Parameter
+
+| element | description | optional | comment |
+| --- | --- | --- | --- |
+| Sort order | Order that sound files are retured | optional | default is most recent
+valid values;most recent earliest shortest longest |
+
+Sample Request
+
+GET https://api.sounddate.com/user/userid/profile/sound?sortorder=longest
+
+| element |  | description | Type | optional | comment |
+| --- | --- | --- | --- | --- | --- |
+| Soundfiles |  | Soundfiles returned | Array of Soundfiles | required |  |
+|  | id | id of soundfile | number | required |  |
+|  | url | url of soundfile | string | required |  |
+|  | length | length of soundfile | number | required |  |
+
+Status Codes and Errors
+
+| Code | Description | Comment |
+| --- | --- | --- |
+| 200 | Success | retrieves POST and GET |
+| 401 | Error | Invalid Token |
+| 413 | Request too large | Longer than 5 minutes |
